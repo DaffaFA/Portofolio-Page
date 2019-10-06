@@ -1,0 +1,15 @@
+{
+  "name": "portofolio-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daffa Dziban Fadia",
+  "license": "MIT",
+  "dependencies": {
+    "countup.js": "^2.0.4",
+    "fullpage.js": "^3.0.7"
+  }
+}

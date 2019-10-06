@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./node_modules/fullpage.js/dist/fullpage.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="section about">
+            <div class="strips-bg">
+                <div class="line-bg"></div>
+                <div class="line-bg"></div>
+            </div>
+            <div class="hero-text">
+                <div class="text-container">
+                    <h1>
+                        Hi! I'm Daffa Dziban Fadia, front-end developer and student at subang high school.
+                    </h1>
+                    <div class="layer-lazyload"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section work">
+            <div class="strips-bg">
+                <div class="line-bg"></div>
+                <div class="line-bg"></div>
+            </div>
+
+            <div class="jumbotron-text">
+                <div class="text-container">
+                    <h1 class="letter">POR</h1>
+                    <div class="layer-lazyload"></div>
+                </div>
+                <div class="text-container">
+                    <h1 class="letter">TFO &mdash;</h1>
+                    <div class="layer-lazyload"></div>
+                </div>
+                <div class="text-container">
+                    <h1 class="letter">&mdash; LIO</h1>
+                    <div class="layer-lazyload"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section skill">
+            <div class="strips-bg">
+                <div class="line-bg"></div>
+            </div>
+
+            <div class="strips-bg">
+                <div class="line-bg"></div>
+            </div>
+
+            <div class="strips-bg">
+                <div class="line-bg"></div>
+            </div>
+
+            <div class="strips-bg">
+                <div class="line-bg"></div>
+            </div>
+
+            <div class="statistics-skill">
+                <div class="statistic">
+                    <div class="progress-statistic">
+                        <svg width="220" height="220" viewBox="0 0 220 220" fill="none" class="ui-skill"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="110" cy="110" r="108" />
+                            <circle cx="110" cy="110" r="108" />
+                        </svg>
+                        <p class="lead" id="ui-count"></p>
+                    </div>
+                    <div class="progress-statistic">
+                        <svg width="220" height="220" viewBox="0 0 220 220" fill="none" class="photo-skill"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="110" cy="110" r="108" />
+                            <circle cx="110" cy="110" r="108" />
+                        </svg>
+                        <p class="lead" id="photo-count"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section contact">
+            <div class="section-title">
+                <h1>
+                    CONTACT
+                </h1>
+            </div>
+            <div class="wrapper">
+                <div class="white-animate">
+                    <div class="op">
+                        <h1 class="title">Don't be a stranger !</h1>
+                        <h3 class="sub-title">Get in touch</h3>
+
+
+                        <div class="clock-wrapper">
+                            <h3 class="sub-title" id="clock"></h3>
+                        </div>
+                        <div class="map-wrapper">
+                            <div id="map"></div>
+                            <div class="layering-map">
+                            </div>
+                            <div class="text-map">
+                                <h3 class="sub-title">The Location</h3>
+                                <div class="paragraph">My location Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Odit, architecto quam. Perspiciatis praesentium ipsam dicta iste similique?
+                                    Doloremque, aliquam molestiae?</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-list">
+                            <ul>
+                                <li>
+                                    <i class="icon ion-ios-mail"></i>
+                                    <a href="#">daffadf562@gmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="icon ion-logo-whatsapp"></i>
+                                    <a href="#">+62 812 2163 7724</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./node_modules/countup.js/dist/countUp.min.js"></script>
+    <script src="./resources/js/index.js"></script>
+    <script>
+        function initMap() {
+            var location = {
+                lat: -6.678311,
+                lng: 107.687468
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 5,
+                center: location
+            })
+
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            })
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+</body>
+
+</html>
