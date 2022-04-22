@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "countup.js": "^2.0.4",
-    "fullpage.js": "^3.0.7"
+    "fullpage.js": "^4.0.5"
   }
 }
